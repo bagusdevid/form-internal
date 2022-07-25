@@ -4,7 +4,7 @@
 
 Untuk instalasi:
 
-- Clone project dengan perintah `git clone https://github.com/alfisahr/agdc-form.git`
+- Clone project dengan perintah `git clone https://github.com/bagusdevid/form-internal.git`
 - Akan ada folder `agdc-form`. Silahkan rename folder tsb sesuai yang dikehendaki, misalkan `penawaran`
 - Jalankan perintah `composer install` untuk menginstall dependency
 - Buat file `.env` dengan kode kurang lebih spt ini
