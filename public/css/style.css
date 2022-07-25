@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap);
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.form-control,
+.custom-select,
+.table {
+  font-size: inherit;
+}
+
+.form-control::-webkit-input-placeholder {
+  /* Edge */
+  color: rgba(0, 0, 0, 0.3);
+}
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(0, 0, 0, 0.3);
+}
+.form-control::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn:not([name="cancel"]):disabled {
+  background-color: #ccc;
+  color: #999;
+  border-color: #999;
+}
+button[name="cancel"]:disabled {
+  color: #ccc !important;
+}
+
+#page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.mm-right-nav {
+  text-align: right;
+  display: flex;
+  justify-content: right;
+}
+.mm-right-nav.show .dropdown-toggle {
+  background-color: rgba(255,255,255,.1);
+}
+.mm-right-nav .dropdown-toggle {
+  border: 0px solid transparent;
+  background-color: transparent;
+  display: flex;
+  padding: 7px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+.mm-right-nav .dropdown-toggle:after {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.mm-right-nav .dropdown-toggle:hover {
+  background-color: rgba(255,255,255, 0.1);
+}
+.mm-right-nav .dropdown-toggle .icon {
+  margin: 0 10px 0 0;
+}
+.mm-right-nav .dropdown-toggle .name {
+  font-weight: 700;
+}
+
+.app-header .navbar-brand {
+  font-weight: 900;
+  margin-right: 30px;
+}
+
+.logo {
+  font-size: 3em;
+  font-weight: 900;
+  margin: 0;
+}
+
+.app-header .menus {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.app-header .menus li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+.app-header .menus li a {
+  color: rgba(255,255,255,.4);
+}
+.app-header .menus li a:hover,
+.app-header .menus li.active a {
+  color: rgba(255,255,255,.9);
+  text-decoration: none;
+}
+
+.content-wrapper {
+  margin-top: 58px;
+  min-height: calc(100vh - 58px);
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  padding: 20px 30px;
+  flex: 1;
+}
+
+.page-container {
+  height: 100%;
+  margin: auto;
+}
+.login-wrapper .login-box {
+  width: 450px;
+  background-color: #fff;
+}
+.login-wrapper .login-box {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 30px 35px;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+.login-wrapper .login-box .title {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  padding: 0;
+}
+.login-wrapper .login-box label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.login-wrapper .copyright,
+.login-wrapper .logo {
+  text-align: center;
+}
+.login-wrapper .logo {
+  margin: 0 0 30px 0;
+}
+.login-wrapper .copyright {
+  margin: 30px 0 0 0;
+  font-size: 85%;
+  color: rgba(0,0,0,.5);
+}
+
+.page-title {
+  margin: 0 0 40px 0;
+  padding: 0 0 15px 0;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid #eee;
+}
+
+#dataForm .modal-footer {
+  justify-content: space-between;
+}
+#dataForm .modal-body,
+#dataDetail .modal-body,
+#changepasswdForm .modal-body {
+  background-color: #f9f9f9;
+  padding: 20px 30px;
+}
+#dataForm .modal-body label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+#dataDetail .item {
+  margin: 0 0 20px 0;
+}
+#dataDetail .item label {
+  text-transform: uppercase;
+  color: rgba(0,0,0,.4);
+  font-weight: 600;
+  font-size: 80%;
+  margin: 0 0 3px 0;
+}
+
+.btn-add:before,
+.btn-save:before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-weight: 700;
+  font-size: 20px;
+  top: 0;
+  left: 10px;
+}
+.btn-add:before {
+  content: "\f055";
+}
+.btn-add,
+.btn-save {
+  position: relative;
+  text-transform: uppercase;
+  padding-left: 36px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-save:before {
+  content: "\f0c7";
+}
+
+.app-footer {
+  margin: 30px 0 0 0;
+  padding: 0 30px;
+}
+.app-footer .copyright {
+  border-top: 1px solid #eee;
+  padding: 30px 0;
+  font-size: 85%;
+  color: rgba(0,0,0,.5);
+}
